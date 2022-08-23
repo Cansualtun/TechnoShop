@@ -1,0 +1,12 @@
+.img-error {
+  width: 900px;
+  height: 600px;
+  margin-left: 270px;
+}
+.text-error {
+  text-align: center;
+}
+.error {
+  height: 100vh;
+  width: 100vw;
+}
