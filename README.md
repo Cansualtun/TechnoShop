@@ -9,7 +9,8 @@ This SandboxApp website to manage his/her products. People also needs to have so
 
 - React 
 - React Router 
-- TailwindCss
+- Bootstrap
+- React-Toast
 
 ## Installations 
 
