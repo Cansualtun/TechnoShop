@@ -1,7 +1,6 @@
 import React from "react";
 import "./Landing.css";
 import img from "../../assets/img/hero.png";
-import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (

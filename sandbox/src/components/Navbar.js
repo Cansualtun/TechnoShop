@@ -18,12 +18,16 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <Link to="/" className="navbar-brand">
+            <Link to="/Home" className="navbar-brand">
               Sandbox App
             </Link>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link to="/" className="nav-link active" aria-current="page">
+                <Link
+                  to="/Home"
+                  className="nav-link active"
+                  aria-current="page"
+                >
                   Home
                 </Link>
               </li>
