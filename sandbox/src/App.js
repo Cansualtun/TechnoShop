@@ -8,6 +8,7 @@ import Products from "./Pages/Products/Products";
 import Services from "./Pages/Services/Services";
 import AddProduct from "./components/Products/AddProduct";
 import EditProduct from "./components/Products/EditProduct";
+import Product from "./components/Products/Product";
 import Error from "./Pages/Error/Error";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Services" element={<Services />} />
         <Route path="/product/add" element={<AddProduct />} />
         <Route path="/product/edit/:id" element={<EditProduct />} />
+        <Route path="/product/:id" element={<Product />} />
         <Route path="/*" element={<Error />} />
       </Routes>
     </>

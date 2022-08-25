@@ -38,6 +38,13 @@ const Home = () => {
                 <Link to="/" className="btn btn-danger" class="btn btn-danger">
                   Delete
                 </Link>
+                <Link
+                  to={`/product/${product.id}`}
+                  className="btn btn-success"
+                  class="btn btn-danger"
+                >
+                  Detail
+                </Link>
               </div>
             </div>
           </div>
