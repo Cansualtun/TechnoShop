@@ -23,7 +23,7 @@ const Landing = () => {
                   data-bs-toggle="modal"
                   data-bs-target="#start"
                 >
-                  Start Building
+                  Start
                 </button>
               </a>
             </div>

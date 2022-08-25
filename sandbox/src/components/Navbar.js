@@ -41,11 +41,6 @@ const Navbar = () => {
                   Contact
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink to="/Services" className="nav-link">
-                  Services
-                </NavLink>
-              </li>
             </ul>
           </div>
         </div>
@@ -53,7 +48,7 @@ const Navbar = () => {
           className="btn btn-outline-light w-25 bg-warning"
           to="/product/add"
         >
-          Add Product
+          Add Product/Services
         </Link>
       </nav>
     </div>
