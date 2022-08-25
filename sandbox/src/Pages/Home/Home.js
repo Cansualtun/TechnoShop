@@ -24,10 +24,14 @@ const Home = () => {
         {products.map((product, index) => (
           <div class="col-4">
             <div class="card" />
-            <img src="" class="card-img-top" alt="..." />
+            <img src={product.thumbnail} class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">{product.title}</h5>
               <p class="card-text">{product.description}</p>
+              <ul>
+                <li class="card-brand">{product.brand}</li>
+                <li class="card-price">{product.price}$</li>
+              </ul>
               <div>
                 <Link
                   class="btn btn-warning"
@@ -38,11 +42,7 @@ const Home = () => {
                 <Link to="/" className="btn btn-danger" class="btn btn-danger">
                   Delete
                 </Link>
-                <Link
-                  to={`/product/${product.id}`}
-                  className="btn btn-success"
-                  class="btn btn-danger"
-                >
+                <Link to={`/product/${product.id}`} class="btn btn-success">
                   Detail
                 </Link>
               </div>

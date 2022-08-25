@@ -49,7 +49,10 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <Link className="btn btn-outline-light w-25" to="/product/add">
+        <Link
+          className="btn btn-outline-light w-25 bg-warning"
+          to="/product/add"
+        >
           Add Product
         </Link>
       </nav>
