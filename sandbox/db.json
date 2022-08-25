@@ -535,63 +535,16 @@
       ]
     },
     {
+      "title": "Iphone 11 ",
+      "description": "Telephone",
+      "price": "200",
+      "brand": "Apple",
       "id": 31
     },
     {
+      "title": "",
+      "description": "",
       "id": 32
-    },
-    {
-      "id": 33
-    },
-    {
-      "id": 34
-    },
-    {
-      "id": 35
-    },
-    {
-      "id": 36
-    },
-    {
-      "id": 37
-    },
-    {
-      "id": 38
-    },
-    {
-      "id": 39
-    },
-    {
-      "id": 40
-    },
-    {
-      "id": 41
-    },
-    {
-      "id": 42
-    },
-    {
-      "id": 43
-    },
-    {
-      "id": 44
-    },
-    {
-      "id": 45
-    },
-    {
-      "id": 46
-    },
-    {
-      "id": 47
-    },
-    {
-      "id": 48
-    },
-    {
-      "title": "hjghjhg",
-      "description": "jhkhjkjhkjh",
-      "id": 49
     }
   ]
 }

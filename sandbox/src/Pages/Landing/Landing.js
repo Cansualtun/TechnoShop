@@ -12,14 +12,14 @@ const Landing = () => {
               <h1>
                 Sandbox <span className="text-warning">App Page</span>
               </h1>
-              <p className="lead my-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ducimus, laudantium. Quasi quaerat temporibus quod impedit ab.
-                Omnis perspiciatis architecto dolores.
+              <p className="lead my-4" class="text">
+                Thanks to this sandbox application, you can add, revise and
+                delete your products if you don't want them. In the coming days,
+                you can become a member and enjoy the benefits of membership!
               </p>
               <a href="/Home">
                 <button
-                  className="btn btn-warning btn-lg"
+                  className="btn btn-warning btn-lg text-white"
                   data-bs-toggle="modal"
                   data-bs-target="#start"
                 >

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Jumbotron.css";
+import { Link } from "react-router-dom";
 
 const Jumbotron = () => {
   return (
@@ -13,9 +14,13 @@ const Jumbotron = () => {
           within the larger container.
         </p>
         <p className="lead">
-          <a className="btn btn-warning btn-lg" href="" role="button">
+          <Link
+            className="btn btn-warning btn-lg text-white "
+            role="button"
+            to="/about"
+          >
             Learn more
-          </a>
+          </Link>
         </p>
       </div>
     </div>
