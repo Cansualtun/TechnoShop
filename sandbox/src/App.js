@@ -6,6 +6,7 @@ import Landing from "./Pages/Landing/Landing";
 import Contact from "./Pages/Contact/Contact";
 import Products from "./Pages/Products/Products";
 import Services from "./Pages/Services/Services";
+import AddProduct from "./components/Products/AddProduct";
 import Error from "./Pages/Error/Error";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Products" element={<Products />} />
         <Route path="/Services" element={<Services />} />
+        <Route path="/product/add" element={<AddProduct />} />
         <Route path="/*" element={<Error />} />
       </Routes>
     </>

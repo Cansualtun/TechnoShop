@@ -48,7 +48,9 @@
       "brand": "Samsung",
       "category": "smartphones",
       "thumbnail": "https://dummyjson.com/image/i/products/3/thumbnail.jpg",
-      "images": ["https://dummyjson.com/image/i/products/3/1.jpg"]
+      "images": [
+        "https://dummyjson.com/image/i/products/3/1.jpg"
+      ]
     },
     {
       "id": 4,
@@ -549,6 +551,65 @@
         "https://dummyjson.com/image/i/products/30/3.jpg",
         "https://dummyjson.com/image/i/products/30/thumbnail.jpg"
       ]
+    },
+    {
+      "id": 31
+    },
+    {
+      "id": 32
+    },
+    {
+      "id": 33
+    },
+    {
+      "id": 34
+    },
+    {
+      "id": 35
+    },
+    {
+      "id": 36
+    },
+    {
+      "id": 37
+    },
+    {
+      "id": 38
+    },
+    {
+      "id": 39
+    },
+    {
+      "id": 40
+    },
+    {
+      "id": 41
+    },
+    {
+      "id": 42
+    },
+    {
+      "id": 43
+    },
+    {
+      "id": 44
+    },
+    {
+      "id": 45
+    },
+    {
+      "id": 46
+    },
+    {
+      "id": 47
+    },
+    {
+      "id": 48
+    },
+    {
+      "title": "hjghjhg",
+      "description": "jhkhjkjhkjh",
+      "id": 49
     }
   ]
 }
