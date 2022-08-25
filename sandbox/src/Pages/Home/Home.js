@@ -29,8 +29,11 @@ const Home = () => {
               <h5 class="card-title">{product.title}</h5>
               <p class="card-text">{product.description}</p>
               <div>
-                <Link to="/" class="btn btn-warning">
-                  Detail
+                <Link
+                  class="btn btn-warning"
+                  to={`/product/edit/${product.id}`}
+                >
+                  Edit
                 </Link>
                 <Link to="/" className="btn btn-danger" class="btn btn-danger">
                   Delete

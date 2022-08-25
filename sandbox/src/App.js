@@ -7,6 +7,7 @@ import Contact from "./Pages/Contact/Contact";
 import Products from "./Pages/Products/Products";
 import Services from "./Pages/Services/Services";
 import AddProduct from "./components/Products/AddProduct";
+import EditProduct from "./components/Products/EditProduct";
 import Error from "./Pages/Error/Error";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Products" element={<Products />} />
         <Route path="/Services" element={<Services />} />
         <Route path="/product/add" element={<AddProduct />} />
+        <Route path="/product/edit/:id" element={<EditProduct />} />
         <Route path="/*" element={<Error />} />
       </Routes>
     </>
