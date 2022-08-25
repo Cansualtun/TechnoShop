@@ -11,7 +11,7 @@ This SandboxApp website to manage his/her products. People also needs to have so
 - React Router 
 - Bootstrap
 - React-Toast
-- -Json-Server
+- Json-Server
 
 ## Installations 
 
