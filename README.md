@@ -11,10 +11,12 @@ This SandboxApp website to manage his/her products. People also needs to have so
 - React Router 
 - Bootstrap
 - React-Toast
+- -Json-Server
 
 ## Installations 
 
 ```
 - git clone https://github.com/Cansualtun/Sandbox-Test.git
-- npm install && npm start
+- npm install && npm run start:dev (You can work in 300 port)
+
 ```
