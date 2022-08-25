@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -18,33 +18,33 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <Link to="/Home" className="navbar-brand">
+            <NavLink to="/" className="navbar-brand">
               Sandbox App
-            </Link>
+            </NavLink>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link
+                <NavLink
                   to="/Home"
                   className="nav-link active"
                   aria-current="page"
                 >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link to="/About" className="nav-link" href="#">
+                <NavLink to="/About" className="nav-link" href="#">
                   About
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link to="/Contact" className="nav-link">
+                <NavLink to="/Contact" className="nav-link">
                   Contact
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link to="/Services" className="nav-link">
+                <NavLink to="/Services" className="nav-link">
                   Services
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
