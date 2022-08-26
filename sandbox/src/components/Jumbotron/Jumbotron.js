@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Jumbotron.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Jumbotron = () => {
+  const [product, setProduct] = useState({
+    title: "",
+    description: "",
+    brand: "",
+    price: "",
+    rating: "",
+    stock: "",
+    thumbnail: "",
+  });
+
+  useEffect(() => {
+    loadProduct();
+  }, []);
+  const loadProduct = async () => {
+    const res = await axios.get(`http://localhost:3001/products/${1}`);
+    setProduct(res.data);
+  };
   return (
     <div>
       <div className="jumbotron">
-        <h1 className="display-4">There is a technology world!</h1>
-        <p className="lead">
-          This is a simple hero unit, a simple jumbotron-style component for
-          calling extra attention to featured content or information. It uses
-          utility classNamees for typography and spacing to space content out
-          within the larger container.
-        </p>
+        <h1 className="display-4">{product.title}</h1>
+        <p className="lead">{product.description}</p>
+        <img
+          src={product.thumbnail}
+          class="card-img-center"
+          alt="..."
+          style={{ marginLeft: 500, borderRadius: 20 }}
+        />
         <p className="lead">
           <Link
             className="btn btn-warning btn-lg text-white "
             role="button"
-            to="/about"
+            to={`/product/${product.id}`}
           >
             Learn more
           </Link>
