@@ -6,16 +6,19 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import Jumbotron from "../../components/Jumbotron/Jumbotron";
 const Home = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProduct] = useState([]);
   useEffect(() => {
     loadProducts();
   }, []);
 
   const loadProducts = async () => {
     const result = await axios.get("http://localhost:3001/products");
-    setProducts(result.data);
+    setProduct(result.data);
   };
-
+  const deleteProduct = async (id) => {
+    await axios.delete(`http://localhost:3001/products/${id}`);
+    loadProducts();
+  };
   return (
     <>
       <Navbar />
@@ -39,9 +42,12 @@ const Home = () => {
                 >
                   Edit
                 </Link>
-                <Link to="/" className="btn btn-danger" class="btn btn-danger">
+                <button
+                  onClick={() => deleteProduct(product.id)}
+                  className="btn btn-danger"
+                >
                   Delete
-                </Link>
+                </button>
                 <Link to={`/product/${product.id}`} class="btn btn-success">
                   Detail
                 </Link>

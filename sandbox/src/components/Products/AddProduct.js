@@ -8,15 +8,20 @@ const AddProduct = () => {
   const [product, setProduct] = useState({
     title: "",
     description: "",
+    price: "",
+    brand: "",
+    thumbnail: "",
   });
   const { title, description, price, brand, thumbnail } = Products;
   const onInputChange = (e) => {
     setProduct({ ...product, [e.target.name]: e.target.value });
   };
+  // The logic used to add the products added by the users next to the products we have.
   const onSubmit = async (e) => {
     e.preventDefault();
     await axios.post("http://localhost:3001/products", product);
   };
+  //We enable the user to "add" it with the post process.
   return (
     <div>
       <Navbar />

@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      <h1 class="header">What we are doing there?</h1>
+      <h1 class="header">What we are doing here?</h1>
       <div class="row">
         <Card
           name="Technology Side"
