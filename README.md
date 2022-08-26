@@ -1,8 +1,7 @@
 # Sandbox-Test
 
  
-This SandboxApp website to manage his/her products. People also needs to have some operations like add/get/delete/update on all products.
-
+This SandboxApp website which contains Crud operations to manage his/her products.
 --- 
 
 ## Used Technologies
@@ -18,5 +17,4 @@ This SandboxApp website to manage his/her products. People also needs to have so
 ```
 - git clone https://github.com/Cansualtun/Sandbox-Test.git
 - npm install && npm run start:dev (You can work in 300 port)
-
 ```
