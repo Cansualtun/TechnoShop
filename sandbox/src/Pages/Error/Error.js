@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import img from "../../assets/img/not-found.svg";
 import "./Error.css";
-
+//The page that will be seen by the user when the user goes to a wrong path
 const Error = () => {
   return (
     <div>

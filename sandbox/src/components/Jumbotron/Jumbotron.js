@@ -17,6 +17,8 @@ const Jumbotron = () => {
   useEffect(() => {
     loadProduct();
   }, []);
+
+  //This code block makes the product with id number 1 appear on the jumbotron.
   const loadProduct = async () => {
     const res = await axios.get(`http://localhost:3001/products/${1}`);
     setProduct(res.data);
@@ -36,7 +38,7 @@ const Jumbotron = () => {
           <Link
             className="btn btn-warning btn-lg text-white "
             role="button"
-            to={`/product/${product.id}`}
+            to={`/product/${1}`}
           >
             Learn more
           </Link>
