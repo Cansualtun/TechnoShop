@@ -9,8 +9,10 @@ const EditProduct = () => {
   const [product, setProduct] = useState({
     title: "",
     description: "",
+    brand: "",
+    price: "",
   });
-  const { title, description } = Products;
+  const { title, description, brand, price } = Products;
   const onInputChange = (e) => {
     setProduct({ ...product, [e.target.name]: e.target.value });
   };
@@ -22,7 +24,10 @@ const EditProduct = () => {
     await axios.put(`http://localhost:3001/products/${id}`, product);
   };
   const loadProduct = async () => {
-    const result = await axios.get(`http://localhost:3001/products/${id}`);
+    const result = await axios.get(
+      `http://localhost:3001/products/${id}`,
+      product
+    );
     setProduct(result.data);
   };
   return (
@@ -30,7 +35,7 @@ const EditProduct = () => {
       <Navbar />
       <div className="container">
         <div className="w-75 mx-auto shadow p-5">
-          <h2 className="text-center mb-4">Add a Product</h2>
+          <h2 className="text-center mb-4">Edit</h2>
           <form onSubmit={(e) => onSubmit(e)}>
             <div className="form-group">
               <input
@@ -52,7 +57,32 @@ const EditProduct = () => {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <button className="btn btn-primary btn-block">Add Product</button>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form-control form-control-lg"
+                placeholder="Enter Brand"
+                name="brand"
+                value={brand}
+                onChange={(e) => onInputChange(e)}
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form-control form-control-lg"
+                placeholder="Enter Price"
+                name="price"
+                value={price}
+                onChange={(e) => onInputChange(e)}
+              />
+            </div>
+            <button
+              className="btn btn-warning btn-block text-white"
+              style={{ marginLeft: 350, marginTop: 10 }}
+            >
+              Edit Product
+            </button>
           </form>
         </div>
       </div>
