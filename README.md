@@ -8,6 +8,7 @@
 - React 
 - React Router 
 - Bootstrap
+- React-Tostify
 - Json-Server
 - Axios
 
