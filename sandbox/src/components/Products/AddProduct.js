@@ -3,6 +3,9 @@ import Navbar from "../Navbar";
 import axios from "axios";
 import Products from "../../Pages/Products/Products";
 import "./css/Add.css";
+import Footer from "../../components/Footer/Footer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const AddProduct = () => {
   const [product, setProduct] = useState({
@@ -21,6 +24,7 @@ const AddProduct = () => {
     e.preventDefault();
     await axios.post("http://localhost:3001/products", product);
   };
+  const notify = () => toast("Product Added!");
   //We enable the user to "add" it with the post process.
   return (
     <div>
@@ -79,12 +83,18 @@ const AddProduct = () => {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <button className="btn-warning btn-block" class="click">
+            <button
+              className="btn btn-warning btn-block text-white"
+              style={{ marginLeft: 350, marginTop: 10 }}
+              onClick={notify}
+            >
               Add Product
             </button>
+            <ToastContainer position="top-center" />
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

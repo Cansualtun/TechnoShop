@@ -25,7 +25,7 @@ const Product = () => {
     <>
       <Navbar />
       <h1 className="header">{product.title}</h1>
-      <div className="containerproduct">
+      <div className="containerproduct col-xs-12 col-md-8">
         <ul className="list-group w-50 shadow p-5">
           <li className="list-group-item">Name: {product.title}</li>
           <li className="list-group-item">

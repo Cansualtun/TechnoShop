@@ -18,3 +18,6 @@
   text-align: center;
   margin-left: auto;
 }
+.list-group-item {
+  font-family: monospace;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer/Footer";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import "./Home.css";
@@ -27,15 +28,22 @@ const Home = () => {
         {products.map((product, index) => (
           <div class="col-4">
             <div class="card" />
-            <img src={product.thumbnail} class="card-img-top" alt="..." />
+            <img
+              src={product.thumbnail}
+              class="card-img-top"
+              alt="..."
+              style={{ marginLeft: 100 }}
+            />
             <div class="card-body">
               <h5 class="card-title">{product.title}</h5>
               <p class="card-text">{product.description}</p>
-              <ul>
-                <li class="card-brand">{product.brand}</li>
-                <li class="card-price">{product.price}$</li>
-              </ul>
-              <div>
+              <div class="list">
+                <ul>
+                  <li class="card-brand">{product.brand}</li>
+                  <li class="card-price">{product.price}$</li>
+                </ul>
+              </div>
+              <div class="group">
                 <Link
                   class="btn btn-warning"
                   to={`/product/edit/${product.id}`}
@@ -56,6 +64,7 @@ const Home = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </>
   );
 };

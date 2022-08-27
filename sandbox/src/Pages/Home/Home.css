@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:700");
+@import url("https://fonts.googleapis.com/css?family=Abel");
+
 .card {
   width: 18rem;
   margin-top: 40px;
+  background-color: #ffbb33;
+  margin-left: 70px;
 }
 
 .card-img-top {
@@ -10,4 +15,32 @@
 .row {
   margin-left: 100px;
   margin-right: 100px;
+  padding: 3px;
+}
+.card-title {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 900;
+  margin: 20px 0 12px;
+  text-align: center;
+}
+.card:hover {
+  transform: rotatex(0deg);
+  transform: rotatez(0deg);
+  transition: 0.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.card-text {
+  clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+  -webkit-clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+  transition: clip-path 1000ms;
+}
+.col-4 {
+  background-color: #f6f6f6;
+  border-radius: 50px;
+}
+.group {
+  text-align: center;
+}
+.list {
+  margin-left: 130px;
 }

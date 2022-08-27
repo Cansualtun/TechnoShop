@@ -3,6 +3,9 @@ import Navbar from "../Navbar";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import Products from "../../Pages/Products/Products";
+import Footer from "../Footer/Footer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const EditProduct = () => {
   let { id } = useParams();
@@ -30,6 +33,7 @@ const EditProduct = () => {
     );
     setProduct(result.data);
   };
+  const notify = () => toast("Product Edited!");
   return (
     <div>
       <Navbar />
@@ -80,12 +84,15 @@ const EditProduct = () => {
             <button
               className="btn btn-warning btn-block text-white"
               style={{ marginLeft: 350, marginTop: 10 }}
+              onClick={notify}
             >
               Edit Product
             </button>
+            <ToastContainer position="top-center" />
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
