@@ -16,5 +16,6 @@
 
 ```
 - git clone https://github.com/Cansualtun/Sandbox-Test.git
+- npm install -g json-server
 - npm install && npm run start:dev (You can work in 300 port)
 ```
