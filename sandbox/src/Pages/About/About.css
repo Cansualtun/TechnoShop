@@ -1,4 +1,11 @@
 .header {
   margin-top: 20px;
-  margin-left: 650px;
+  margin-left: 100px;
+}
+.png {
+  margin-left: 800px;
+  margin-top: -600px;
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
 }
