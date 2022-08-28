@@ -1,7 +1,6 @@
 # Sandbox-Test
 
  This SandboxApp website which contains Crud operations to manage his/her products. <br>
- Live : https://sandboxtestapp.netlify.app/
 
 
 ## Used Technologies && Library
