@@ -20,6 +20,24 @@
       ]
     },
     {
+      "id": 2,
+      "title": "iPhone X",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "price": 899,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "thumbnail": "https://dummyjson.com/image/i/products/2/thumbnail.jpg",
+      "images": [
+        "https://dummyjson.com/image/i/products/2/1.jpg",
+        "https://dummyjson.com/image/i/products/2/2.jpg",
+        "https://dummyjson.com/image/i/products/2/3.jpg",
+        "https://dummyjson.com/image/i/products/2/thumbnail.jpg"
+      ]
+    },
+    {
       "id": 3,
       "title": "Samsung Universe 9",
       "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
@@ -30,13 +48,30 @@
       "brand": "Samsung",
       "category": "smartphones",
       "thumbnail": "https://dummyjson.com/image/i/products/3/thumbnail.jpg",
+      "images": ["https://dummyjson.com/image/i/products/3/1.jpg"]
+    },
+    {
+      "id": 4,
+      "title": "OPPOF19",
+      "description": "OPPO F19 is officially announced on April 2021.",
+      "price": 280,
+      "discountPercentage": 17.91,
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "OPPO",
+      "category": "smartphones",
+      "thumbnail": "https://dummyjson.com/image/i/products/4/thumbnail.jpg",
       "images": [
-        "https://dummyjson.com/image/i/products/3/1.jpg"
+        "https://dummyjson.com/image/i/products/4/1.jpg",
+        "https://dummyjson.com/image/i/products/4/2.jpg",
+        "https://dummyjson.com/image/i/products/4/3.jpg",
+        "https://dummyjson.com/image/i/products/4/4.jpg",
+        "https://dummyjson.com/image/i/products/4/thumbnail.jpg"
       ]
     },
     {
       "id": 5,
-      "title": "p-21",
+      "title": "Huawei P30",
       "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
       "price": 499,
       "discountPercentage": 10.58,
@@ -476,6 +511,43 @@
         "https://dummyjson.com/image/i/products/28/3.png",
         "https://dummyjson.com/image/i/products/28/4.jpg",
         "https://dummyjson.com/image/i/products/28/thumbnail.jpg"
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Handcraft Chinese style",
+      "description": "Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate",
+      "price": 60,
+      "discountPercentage": 15.34,
+      "rating": 4.44,
+      "stock": 7,
+      "brand": "luxury palace",
+      "category": "home-decoration",
+      "thumbnail": "https://dummyjson.com/image/i/products/29/thumbnail.webp",
+      "images": [
+        "https://dummyjson.com/image/i/products/29/1.jpg",
+        "https://dummyjson.com/image/i/products/29/2.jpg",
+        "https://dummyjson.com/image/i/products/29/3.webp",
+        "https://dummyjson.com/image/i/products/29/4.webp",
+        "https://dummyjson.com/image/i/products/29/thumbnail.webp"
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Key Holder",
+      "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
+      "price": 30,
+      "discountPercentage": 2.92,
+      "rating": 4.92,
+      "stock": 54,
+      "brand": "Golden",
+      "category": "home-decoration",
+      "thumbnail": "https://dummyjson.com/image/i/products/30/thumbnail.jpg",
+      "images": [
+        "https://dummyjson.com/image/i/products/30/1.jpg",
+        "https://dummyjson.com/image/i/products/30/2.jpg",
+        "https://dummyjson.com/image/i/products/30/3.jpg",
+        "https://dummyjson.com/image/i/products/30/thumbnail.jpg"
       ]
     }
   ]

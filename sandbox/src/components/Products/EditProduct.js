@@ -81,12 +81,8 @@ const EditProduct = () => {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <button
-              className="btn btn-warning btn-block text-white"
-              style={{ marginLeft: 350, marginTop: 10 }}
-              onClick={notify}
-            >
-              Edit Product
+            <button type="submit" class="btn btn-warning" onClick={notify}>
+              Edit
             </button>
             <ToastContainer position="top-center" />
           </form>
