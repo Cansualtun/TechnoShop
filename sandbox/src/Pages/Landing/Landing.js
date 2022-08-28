@@ -23,7 +23,7 @@ const Landing = () => {
                   className="btn btn-warning btn-lg text-white"
                   data-bs-toggle="modal"
                   data-bs-target="#start"
-                  style={{ marginLeft: 250 }}
+                  style={{ marginLeft: 10 }}
                 >
                   Start
                 </button>

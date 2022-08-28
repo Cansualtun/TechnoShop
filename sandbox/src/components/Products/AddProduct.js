@@ -83,11 +83,7 @@ const AddProduct = () => {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <button
-              className="btn btn-warning btn-block text-white"
-              style={{ marginLeft: 350, marginTop: 10 }}
-              onClick={notify}
-            >
+            <button type="submit" class="btn btn-warning" onClick={notify}>
               Add Product
             </button>
             <ToastContainer position="top-center" />

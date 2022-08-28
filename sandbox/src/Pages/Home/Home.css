@@ -1,46 +1,104 @@
-@import url("https://fonts.googleapis.com/css?family=Exo:700");
-@import url("https://fonts.googleapis.com/css?family=Abel");
-
-.card {
-  width: 18rem;
-  margin-top: 40px;
-  background-color: #ffbb33;
-  margin-left: 70px;
+.container {
+  grid-column-gap: 200px;
+  grid-row-gap: 200px;
+  grid-gap: 200px;
 }
-
+.card_area {
+  background: #232427;
+  margin: 8px;
+  border: 5px solid #232427;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px 0px #15535c;
+}
 .card-img-top {
+  position: absolute;
+  margin-left: -120px;
   width: 200px;
   height: 200px;
+  border-radius: 10px;
 }
-.row {
-  margin-left: 100px;
-  margin-right: 100px;
-  padding: 3px;
+.single_card {
+  position: relative;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 13px 0px #000000;
+  z-index: 1;
+  left: 50px;
+  right: 50px;
+  height: 520px;
+  width: 240px;
+}
+.single_card:after {
+  content: "";
+  position: absolute;
+  background: #ffbb33;
+  left: 50px;
+  right: 50px;
+  height: 520px;
+  width: 280px;
+  z-index: -1;
+  transition: all 1s;
+  border-radius: 10px;
+}
+.single_card:hover:after {
+  width: 400px;
+}
+.single_card h2 {
+  font-size: 50px;
+  color: #404144;
+  font-weight: 400;
+  text-align: right;
+  padding-right: 25px;
+}
+.single_card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: -60px;
+}
+.single_card p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  margin-right: -300px;
+  padding-left: 170px;
+  padding-right: 100px;
 }
 .card-title {
-  font-family: "Alegreya Sans", sans-serif;
-  font-weight: 900;
-  margin: 20px 0 12px;
+  margin-top: 220px;
+  margin-right: -300px;
+  padding-left: 250px;
   text-align: center;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #404144;
+  font-family: monospace;
 }
-.card:hover {
-  transform: rotatex(0deg);
-  transform: rotatez(0deg);
-  transition: 0.6s;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-}
-.card-text {
-  clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
-  -webkit-clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
-  transition: clip-path 1000ms;
-}
-.col-4 {
-  background-color: #f6f6f6;
-  border-radius: 50px;
+.list {
+  margin-left: 230px;
+  color: #404144;
+  font-family: monospace;
 }
 .group {
   text-align: center;
 }
-.list {
-  margin-left: 130px;
+.col-edit {
+  margin-left: 110px;
+}
+.col {
+  margin-left: 260px;
+  margin-top: -40px;
+}
+.col-detail {
+  margin-left: 280px;
+  margin-top: -40px;
+}
+.card {
+  margin-left: 200px;
+  color: #000000;
 }

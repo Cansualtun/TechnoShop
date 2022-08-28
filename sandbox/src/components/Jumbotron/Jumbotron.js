@@ -28,12 +28,14 @@ const Jumbotron = () => {
       <div className="jumbotron">
         <h1 className="display-4">{product.title}</h1>
         <p className="lead">{product.description}</p>
-        <img
-          src={product.thumbnail}
-          class="card-img-center"
-          alt="..."
-          style={{ marginLeft: 500, borderRadius: 20 }}
-        />
+        <div class="col-sm-12">
+          <img
+            src={product.thumbnail}
+            class="card-img-center"
+            alt="..."
+            style={{ marginLeft: 500, borderRadius: 20 }}
+          />
+        </div>
         <p className="lead">
           <Link
             className="btn btn-warning btn-lg text-white "

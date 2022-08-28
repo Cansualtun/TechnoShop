@@ -9,12 +9,12 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <ToastContainer position="top-center" />
       <div className="container">
         <div className="w-75 mx-auto shadow p-5">
           <h2 className="text-center mb-4">Contact-Us</h2>
           <form className="form">
             <div className="form-group">
+              <ToastContainer position="top-center" />
               <input
                 type="text"
                 className="form-control form-control-lg"
@@ -47,11 +47,7 @@ const Contact = () => {
                 style={{ height: 200 }}
               />
             </div>
-            <button
-              className="btn btn-warning btn-block text-white"
-              style={{ marginLeft: 380, marginTop: 10 }}
-              onClick={notify}
-            >
+            <button type="submit" class="btn btn-warning" onClick={notify}>
               Send
             </button>
           </form>
