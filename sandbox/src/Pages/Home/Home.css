@@ -38,13 +38,13 @@
   left: 50px;
   right: 50px;
   height: 520px;
-  width: 280px;
+  width: 250px;
   z-index: -1;
   transition: all 1s;
   border-radius: 10px;
 }
 .single_card:hover:after {
-  width: 400px;
+  width: 340px;
 }
 .single_card h2 {
   font-size: 50px;
