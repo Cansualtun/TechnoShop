@@ -7,7 +7,7 @@ const Footer = () => {
     <div>
       <footer>
         <div class="footer-content">
-          <h3>Sandbox APP</h3>
+          <h3>TechnoShop App</h3>
           <p>The Best Online Shopping Site</p>
           <div class="footer-menu">
             <ul class="f-menu">

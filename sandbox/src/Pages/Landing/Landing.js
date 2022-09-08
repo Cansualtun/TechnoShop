@@ -11,7 +11,7 @@ const Landing = () => {
           <div className="d-sm-flex align-items-center justify-content-between w-full h-full">
             <div>
               <h1 style={{ marginLeft: 100 }}>
-                Sandbox <span className="text-warning">App Page</span>
+                TechnoShop <span className="text-warning">App Page</span>
               </h1>
               <p className="lead my-4" class="text">
                 Thanks to this sandbox application, you can add, revise and

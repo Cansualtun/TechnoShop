@@ -31,9 +31,9 @@ const Jumbotron = () => {
         <div class="col-sm-12">
           <img
             src={product.thumbnail}
-            class="card-img-center"
+            class="card"
             alt="..."
-            style={{ marginLeft: 500, borderRadius: 20 }}
+            style={{ marginLeft: 370, borderRadius: 20 }}
           />
         </div>
         <p className="lead">
